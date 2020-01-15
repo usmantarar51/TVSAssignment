@@ -19,7 +19,7 @@ class MapInteractor {
 extension MapInteractor: MapUseCase {
     // TODO: Implement use case methods
 
-    func generatPositionsArray() -> [CityModel] {
+    func getPositions() -> [CityModel] {
         var cities = [CityModel]()
 
         cities.append(CityModel(name: "Dubai", coordinate: CLLocationCoordinate2D(latitude: 25.2048, longitude: 55.2708)))

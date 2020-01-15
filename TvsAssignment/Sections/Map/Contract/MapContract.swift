@@ -24,7 +24,7 @@ protocol MapPresentation: class {
 protocol MapUseCase: class {
     // TODO: Declare use case methods
 
-    func generatPositionsArray() -> [CityModel]
+    func getPositions() -> [CityModel]
 }
 
 protocol MapUseCaseOutput: class {

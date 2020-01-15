@@ -1,7 +1,9 @@
 
 # Implementation of Viper Architecture in weather app
 
-### Enum Environment in Constants.Swift file is defince to setup Network Environment
+### Architecture Diagram
+
+[![Diagram](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.png)](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.png)
 
 ## Main Components
 - VIPER architecture along with 2 extra entities *Service* & *Contract* 
@@ -16,11 +18,7 @@
 - Easy to understand, modifiable and structural code. 
 
 
-I was given 2 days to submit the assignment during my office timmings. Following areas can be further improved if sufficient time is provided
-
-
 ## Improvement Areas:
-- Unit Tests
 - Base components
 
 ### Screenshots

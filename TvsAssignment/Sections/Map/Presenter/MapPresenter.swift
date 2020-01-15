@@ -19,7 +19,7 @@ class MapPresenter {
 
 extension MapPresenter: MapPresentation {
     func viewDidLoad() {
-        view?.showLocations(locations: interactor?.generatPositionsArray() ?? [])
+        view?.showLocations(locations: interactor?.getPositions() ?? [])
     }
 
     func locationDidTapped(model: CityModel) {
