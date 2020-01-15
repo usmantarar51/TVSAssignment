@@ -3,7 +3,7 @@
 
 ### Architecture Diagram
 
-[![Diagram](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.png)](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.png)
+[![Diagram](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.jpg)](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Diagram.jpg)
 
 ## Main Components
 - VIPER architecture along with 2 extra entities *Service* & *Contract* 
