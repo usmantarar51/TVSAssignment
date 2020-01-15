@@ -65,11 +65,7 @@ class DailyReportTableViewCell: BaseTableViewCell {
         var rowModels: [BaseRowModel] = []
         if let dataArray = data as? [Data] {
             for data in dataArray {
-                let rowModel = BaseRowModel()
-                rowModel.rowCellIdentifier = "DailyReportTableViewCell"
-                rowModel.rowValue = data
-                rowModel.rowHeight = 40
-                rowModels.append(rowModel)
+                rowModels.append(DailyReportTableViewCell.rowModel(data: data))
             }
             return rowModels
         }

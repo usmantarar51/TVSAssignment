@@ -11,7 +11,7 @@ import MapKit
 
 protocol WeatherForecastDetailView: Loadable {
     // TODO: Declare view methods
-    func rowModelsGenerated(rowModels: [BaseRowModel])
+    func showWeatherInformation(rowModels: [BaseRowModel])
     func updateCityDetails(forecast: ForecastModel)
     func showError(error: Error)
 }

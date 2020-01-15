@@ -50,6 +50,6 @@ extension WeatherForecastDetailPresenter: WeatherForecastDetailUseCaseOutput {
             rowModels.append(SunriseInfoCellTableViewCell.rowModel(data: dailyData))
         }
 
-        view?.rowModelsGenerated(rowModels: rowModels)
+        view?.showWeatherInformation(rowModels: rowModels)
     }
 }

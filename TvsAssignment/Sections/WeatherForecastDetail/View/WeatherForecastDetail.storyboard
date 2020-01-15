@@ -52,6 +52,10 @@
                                 <rect key="frame" x="0.0" y="122.5" width="375" height="544.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QAr-Kw-q0Y" id="3uq-wB-36M"/>
+                                    <outlet property="delegate" destination="QAr-Kw-q0Y" id="GwE-I0-gZH"/>
+                                </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uap-ae-btR">
                                 <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>

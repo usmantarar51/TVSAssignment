@@ -24,6 +24,8 @@ class ForecastHeaderView: BaseTableViewHeaderFooterView {
     var hourlyForecast: Daily?
     var presenter: TableViewHeaderPresenter?
     
+    static let resueIdentifier = "ForecastHeaderView"
+    
     // MARK: - Override UpdateCell
     
     override func awakeFromNib() {

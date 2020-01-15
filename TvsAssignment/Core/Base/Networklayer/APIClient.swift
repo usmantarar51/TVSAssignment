@@ -17,7 +17,7 @@ class APIClient {
     /// - Parameters:
     ///   - action: service end point
     ///   - completionHandler: generic call back completion handler
-    class func performGet<T: Decodable>(route: APIRouter, completionHandler: @escaping (DataResponse<T>) -> ()) {
+    class func perform<T: Decodable>(route: APIRouter, completionHandler: @escaping (DataResponse<T>) -> ()) {
         Alamofire.request(route).responseObject { response in
             completionHandler(response)
         }

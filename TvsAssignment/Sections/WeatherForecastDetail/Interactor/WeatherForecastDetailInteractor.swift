@@ -17,7 +17,7 @@ class WeatherForecastDetailInteractor {
 
 extension WeatherForecastDetailInteractor: WeatherForecastDetailUseCase {
     func fetchWeatherDetails(latitude: Double, longitude: Double) {
-        services.executeForcastDetail(latitude: latitude, longitude: longitude) { response in
+        services.executeWeatherDetail(latitude: latitude, longitude: longitude) { response in
             if let response = response.result.value {
                 self.output?.weatherDetailReceived(response: response)
             } else {

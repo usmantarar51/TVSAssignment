@@ -42,15 +42,6 @@ class WeatherForecastDetailViewController: BaseViewController {
 
         let height: CGFloat = DeviceType.hasNotch ? 160 : 79
         bgTopConstraint.constant = -height
-
-        setupTableView()
-    }
-
-    // MARK: - Private Methods
-
-    fileprivate func setupTableView() {
-        tableView?.delegate = self
-        tableView?.dataSource = self
     }
 }
 
@@ -65,7 +56,7 @@ extension WeatherForecastDetailViewController: WeatherForecastDetailView {
         temperatureLabel.text = "\(temp ?? 0)\u{00B0}"
     }
 
-    func rowModelsGenerated(rowModels: [BaseRowModel]) {
+    func showWeatherInformation(rowModels: [BaseRowModel]) {
         tableViewItems.removeAll()
         tableViewItems.append(contentsOf: rowModels)
         tableView?.reloadData()
@@ -73,8 +64,7 @@ extension WeatherForecastDetailViewController: WeatherForecastDetailView {
     }
 
     func showError(error: Error) {
-        showAlertWith(message: error.localizedDescription) { _ in
-        }
+        showAlertWith(message: error.localizedDescription) { _ in }
     }
 }
 
@@ -104,8 +94,8 @@ extension WeatherForecastDetailViewController {
         guard let forcast = self.forecast else {
             return UIView()
         }
-        tableView.register(UINib(nibName: "ForecastHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "ForecastHeaderView")
-        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "ForecastHeaderView") as? BaseTableViewHeaderFooterView else {
+        tableView.register(UINib(nibName: ForecastHeaderView.resueIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: ForecastHeaderView.resueIdentifier)
+        guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: ForecastHeaderView.resueIdentifier) as? BaseTableViewHeaderFooterView else {
             return UIView()
         }
         header.updateView(rowModel: forcast)

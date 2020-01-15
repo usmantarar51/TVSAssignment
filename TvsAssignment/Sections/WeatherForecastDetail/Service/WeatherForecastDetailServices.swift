@@ -10,10 +10,10 @@ import Alamofire
 import Foundation
 
 class WeatherForecastDetailServices {
-    internal func executeForcastDetail(latitude: Double, longitude: Double, completionHandler: @escaping (DataResponse<ForecastModel>) -> ()) {
+    internal func executeWeatherDetail(latitude: Double, longitude: Double, completionHandler: @escaping (DataResponse<ForecastModel>) -> ()) {
         let route = APIRouter.forecast(latitudes: latitude, longitude: longitude)
 
-        APIClient.performGet(route: route) { (handler: DataResponse<ForecastModel>) in
+        APIClient.perform(route: route) { (handler: DataResponse<ForecastModel>) in
             completionHandler(handler)
         }
     }
