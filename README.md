@@ -20,8 +20,8 @@ I was given 2 days to submit the assignment during my office timmings. Following
 
 
 ## Improvement Areas:
-### Unit Tests
-### Base components
+#### Unit Tests
+#### Base components
 
 ### Screenshots
 [![Map](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Map.png)](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Map.png)
