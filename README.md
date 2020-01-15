@@ -23,6 +23,7 @@ I was given 2 days to submit the assignment during my office timmings. Following
 ### Unit Tests
 ### Base components
 
-## APP Interface
-https://github.com/usmantarar51/TVSAssignment/issues/1
-
+### Screenshots
+[![Map](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone1-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone1.png)
+[![Weather Detail 1](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone2-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone2.png)
+[![Weather Detail 2](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone3-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone3.png)
