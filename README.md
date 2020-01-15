@@ -24,6 +24,6 @@ I was given 2 days to submit the assignment during my office timmings. Following
 ### Base components
 
 ### Screenshots
-[![Map](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone1-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone1.png)
+[![Map](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Map.png)](https://github.com/usmantarar51/TVSAssignment/blob/master/Screenshots/Map.png)
 [![Weather Detail 1](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone2-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone2.png)
 [![Weather Detail 2](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone3-thumb.png)](https://raw.githubusercontent.com/khawars/KSTokenView/screenshots/screenshots/iphone3.png)
