@@ -32,4 +32,17 @@ class SummaryTableViewCell: BaseTableViewCell {
             summaryLabel.text = summary
         }
     }
+
+    // MARK: - Cell Provider
+
+    // __________________________________________________________________________________
+    //
+
+    class func rowModel(data: Any?) -> BaseRowModel {
+        let rowModel = BaseRowModel()
+        rowModel.rowCellIdentifier = "SummaryTableViewCell"
+        rowModel.rowValue = data
+        rowModel.rowHeight = 70
+        return rowModel
+    }
 }

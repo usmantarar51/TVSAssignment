@@ -47,4 +47,32 @@ class DailyReportTableViewCell: BaseTableViewCell {
             }
         }
     }
+
+    // MARK: - Cell Provider
+
+    // __________________________________________________________________________________
+    //
+
+    class func rowModel(data: Any?) -> BaseRowModel {
+        let rowModel = BaseRowModel()
+        rowModel.rowCellIdentifier = "DailyReportTableViewCell"
+        rowModel.rowValue = data
+        rowModel.rowHeight = 40
+        return rowModel
+    }
+
+    class func rowModels(data: Any?) -> [BaseRowModel] {
+        var rowModels: [BaseRowModel] = []
+        if let dataArray = data as? [Data] {
+            for data in dataArray {
+                let rowModel = BaseRowModel()
+                rowModel.rowCellIdentifier = "DailyReportTableViewCell"
+                rowModel.rowValue = data
+                rowModel.rowHeight = 40
+                rowModels.append(rowModel)
+            }
+            return rowModels
+        }
+        return rowModels
+    }
 }

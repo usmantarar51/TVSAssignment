@@ -9,5 +9,4 @@
 import Alamofire
 import Foundation
 
-class MapServices {
-}
+class MapServices {}

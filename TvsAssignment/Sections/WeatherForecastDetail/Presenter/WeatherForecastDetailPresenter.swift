@@ -10,7 +10,6 @@ import Foundation
 import MapKit
 
 class WeatherForecastDetailPresenter {
-
     // MARK: Properties
 
     weak var view: WeatherForecastDetailView?
@@ -32,37 +31,25 @@ extension WeatherForecastDetailPresenter: WeatherForecastDetailUseCaseOutput {
         view?.hideLoading()
         view?.showError(error: error)
     }
-    
+
     func weatherDetailReceived(response: ForecastModel) {
         view?.hideLoading()
         view?.updateCityDetails(forecast: response)
-        
+
         var rowModels: [BaseRowModel] = []
-        
-        for dailyData in response.daily?.data ?? [] {
-            let rowModel = BaseRowModel()
-            rowModel.rowCellIdentifier = "DailyReportTableViewCell"
-            rowModel.rowValue = dailyData
-            rowModel.rowHeight = 40
-            rowModels.append(rowModel)
+
+        if let dailyData = response.daily?.data {
+            rowModels.append(contentsOf: DailyReportTableViewCell.rowModels(data: dailyData))
         }
-        
+
         if let summary = response.daily?.summary {
-            let rowModel = BaseRowModel()
-            rowModel.rowCellIdentifier = "SummaryTableViewCell"
-            rowModel.rowValue = summary
-            rowModel.rowHeight = 70
-            rowModels.append(rowModel)
+            rowModels.append(SummaryTableViewCell.rowModel(data: summary))
         }
-        
+
         if let dailyData = response.daily?.data?[0] {
-            let rowModel = BaseRowModel()
-            rowModel.rowCellIdentifier = "SunriseInfoCellTableViewCell"
-            rowModel.rowValue = dailyData
-            rowModel.rowHeight = 70
-            rowModels.append(rowModel)
+            rowModels.append(SunriseInfoCellTableViewCell.rowModel(data: dailyData))
         }
-        
+
         view?.rowModelsGenerated(rowModels: rowModels)
     }
 }

@@ -35,19 +35,19 @@ extension UIColor {
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
-    
+
     func withAlpha(_ alpha: Float) -> UIColor {
         guard let components = cgColor.components else {
             return UIColor.black
         }
-        
+
         let r: CGFloat = components[0]
         let g: CGFloat = components[1]
         var b: CGFloat = 1.0
         if components.count > 2 {
             b = components[2]
         }
-        
+
         return UIColor(red: r, green: g, blue: b, alpha: CGFloat(alpha))
     }
 }

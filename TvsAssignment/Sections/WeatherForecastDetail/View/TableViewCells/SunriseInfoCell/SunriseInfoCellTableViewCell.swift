@@ -37,4 +37,17 @@ class SunriseInfoCellTableViewCell: BaseTableViewCell {
             sunsetValueLabel.text = sunset.formatTime
         }
     }
+
+    // MARK: - Cell Provider
+
+    // __________________________________________________________________________________
+    //
+
+    class func rowModel(data: Any?) -> BaseRowModel {
+        let rowModel = BaseRowModel()
+        rowModel.rowCellIdentifier = "SunriseInfoCellTableViewCell"
+        rowModel.rowValue = data
+        rowModel.rowHeight = 70
+        return rowModel
+    }
 }

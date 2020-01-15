@@ -43,4 +43,18 @@ class HourlyForcastCollectionCell: BaseCollectionViewCell {
             }
         }
     }
+
+    // MARK: - Cell Provider
+
+    // __________________________________________________________________________________
+    //
+
+    class func rowModel(data: Any?) -> BaseRowModel {
+        let rowModel = BaseRowModel()
+        rowModel.rowCellIdentifier = "HourlyForcastCollectionCell"
+        rowModel.rowValue = data
+        rowModel.rowWidth = 44
+        rowModel.rowHeight = 85
+        return rowModel
+    }
 }

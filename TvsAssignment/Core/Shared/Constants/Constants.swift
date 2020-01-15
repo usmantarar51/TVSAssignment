@@ -11,21 +11,21 @@ import UIKit
 
 enum Environment {
     case stagging
-    
+
     var baseURL: String {
         switch self {
         case .stagging:
             return "https://api.darksky.net/"
         }
     }
-    
+
     var headers: [String: String] {
         switch self {
         case .stagging:
             return ["Content-Type": "application/json"]
         }
     }
-    
+
     var secretKey: String {
         switch self {
         case .stagging:
@@ -37,7 +37,6 @@ enum Environment {
 struct Endpoints {
     static let forecast = "forecast"
 }
-
 
 struct ScreenSize {
     static let BASE_SCREEN_HEIGHT: CGFloat = 667.0

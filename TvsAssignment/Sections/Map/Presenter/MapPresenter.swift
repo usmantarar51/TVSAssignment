@@ -21,9 +21,9 @@ extension MapPresenter: MapPresentation {
     func viewDidLoad() {
         view?.showLocations(locations: interactor?.generatPositionsArray() ?? [])
     }
-    
+
     func locationDidTapped(model: CityModel) {
-        self.navigateToCityWeatherForecast(coordinates: model.coordinate, city: model.name)
+        navigateToCityWeatherForecast(coordinates: model.coordinate, city: model.name)
     }
 
     func navigateToCityWeatherForecast(coordinates: CLLocationCoordinate2D, city: String) {

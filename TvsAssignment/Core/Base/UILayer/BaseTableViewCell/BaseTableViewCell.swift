@@ -9,9 +9,7 @@
 import UIKit
 
 class BaseTableViewCell: UITableViewCell {
-    
     func updateCell(rowModel: BaseRowModel) {
         preconditionFailure("You have to override updateCell")
     }
-
 }

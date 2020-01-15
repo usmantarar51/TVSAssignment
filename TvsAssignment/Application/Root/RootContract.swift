@@ -8,10 +8,10 @@
 
 import UIKit
 
-enum AppState : String{
-    case SplashCompleted = "SplashCompleted"
-    case TutorialCompleted = "TutorialCompleted"
-    case LoadHomeScreen = "LoadHomeScreen"
+enum AppState: String {
+    case SplashCompleted
+    case TutorialCompleted
+    case LoadHomeScreen
 }
 
 protocol RootWireframe: class {

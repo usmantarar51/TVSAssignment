@@ -25,6 +25,4 @@ extension WeatherForecastDetailInteractor: WeatherForecastDetailUseCase {
             }
         }
     }
-    
-    // TODO: Implement use case methods
 }

@@ -13,7 +13,7 @@ extension AppDelegate {
     internal func setupApp(window: UIWindow) {
         _boot()
     }
-    
+
     internal func _boot() {
         if let window = self.window {
             window.backgroundColor = .white

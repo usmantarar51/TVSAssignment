@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class WeatherForecastDetailRouter {
-
     // MARK: Properties
 
     weak var view: UIViewController?
@@ -23,7 +22,7 @@ class WeatherForecastDetailRouter {
         let router = WeatherForecastDetailRouter()
         let interactor = WeatherForecastDetailInteractor()
 
-        viewController.presenter =  presenter
+        viewController.presenter = presenter
 
         presenter.view = viewController
         presenter.router = router

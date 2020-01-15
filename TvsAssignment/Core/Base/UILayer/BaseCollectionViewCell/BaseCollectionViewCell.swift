@@ -9,7 +9,6 @@
 import UIKit
 
 class BaseCollectionViewCell: UICollectionViewCell {
-    
     func updateCell(rowModel: BaseRowModel) {
         preconditionFailure("You have to override updateCell")
     }
